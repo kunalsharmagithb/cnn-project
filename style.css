@@ -1717,3 +1717,213 @@ z-index: 1;
     flex-direction: row;
     /* gap: 50px; */
 }
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.latestblogssection{
+    width: 75%;
+}
+
+.latestblogsheading{
+    text-transform: uppercase;
+    /* opacity: 0.9; */
+    border-top: 1px solid #d5d3d3;
+    margin-top: 50px;
+    font-weight: 200;
+}
+.popularnowsection{
+    width: 22%;
+    margin-top: 50px;
+    
+}
+.popularnewsbox{
+    margin-top: 20px;
+    border: 1px solid rgb(202, 202, 202);
+}
+.popularimagebox{
+    width: 100%;
+    border: 1px solid rgb(196, 194, 194);
+    padding: 5px;
+}
+.emailinputplaceholder{
+    border-radius: 5px;
+    padding:5px 5px;
+    width: 100%;
+    border: 1px solid rgb(180, 179, 179);
+    transition: all 0.2s ease-in-out;
+}
+.emailinputplaceholder::placeholder{
+    font-weight: 500;
+    font-size: 15px;
+}
+.emailinputplaceholder:focus{
+    outline: none;
+    border: 1px solid #9a060b;}
+.popularnewsheader{
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    /* border-bottom: 1px solid rgb(202, 202, 202); */
+}
+.popularnewsunorderedlist{
+    list-style: none;
+    padding: 0%;
+}
+.popularimagebox img{
+    width: 100%;
+    object-fit: fill;
+}
+.popularnews{
+    display: flex;
+    justify-content: space-between;
+}
+.popularnewslistitem{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0px 10px ;
+}
+.popularnewsitemnumber{
+    width: 20%;
+    text-align:start;
+    display: flex;
+    justify-content:left;
+    align-items: start;
+    font-size: 50px;
+    height: 100%;
+    color: #B5050A;
+}
+.popularnewsitemnumber span{
+    top: 0;
+    height: 100%;
+    font-weight: 700;
+    font-style: italic;
+}
+.popularnewsitemcontent{
+    width: 80%;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 700;
+}
+.signupsection{
+    border: 1px solid rgb(219, 215, 215);
+    padding: 10px;
+    margin: 10px 0px;
+}
+.emailinputbox{
+    margin: 10px 0px;
+    
+}
+.header{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+}
+.signupbuttonbox{
+    background-color: #E62323;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin: 10px 0px;
+    transition: all 0.2s ease-in-out;
+}
+.signupbuttonbox:hover{
+    background-color:#b61b1b;
+}
+
+.signupbtn{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    
+}
+.footersociallinks{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0px 10px;
+    font-size: 25px;
+    
+}
+.footersociallinks a{
+    width: 37px;
+    text-decoration: none;
+    color: black;
+    padding: 0px 3px;
+    border: 1px solid rgb(229, 226, 226);
+    border-radius: 70%;
+    display: flex;
+     align-items: center;
+    justify-content: center;
+}
+.footersociallinks a:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+.newscardbody{
+    display: flex;
+    gap: 30px;
+    
+}
+.newscardunorderedlist{
+    list-style: none;
+    padding: 0px;
+}
+.newscardlistitem{
+    /* width: 100%; */
+    margin: 30px 0px;
+    border: 1px solid rgb(232, 232, 232);
+}
+.newscardslistbox{
+    margin-top: 20px;
+    padding: 10px 10px;
+    display: flex;
+    padding-bottom: 0px;
+}
+.newscardlistitem:hover .newscardimagebox img{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.newscardimagebox{
+    width:30% !important;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.newscardimagebox::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,0.1);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.newscardimagebox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.newscardtitle{
+    font-weight: 800;
+    font-size: 15px;
+    }
+.readmoreofnewsacard a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: red;
+    font-size: 12px;
+    font-weight: 700;
+}
+.newscardcontentbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width :70%;
+    padding:5px 0px;
+}
