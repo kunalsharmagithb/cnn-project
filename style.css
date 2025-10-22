@@ -1840,7 +1840,7 @@ z-index: 1;
     font-weight: 700;
     
 }
-.footersociallinks{
+.popularnewssociallinks{
     display: flex;
     gap: 10px;
     align-items: center;
@@ -1850,7 +1850,7 @@ z-index: 1;
     font-size: 25px;
     
 }
-.footersociallinks a{
+.popularnewssociallinks a{
     width: 37px;
     text-decoration: none;
     color: black;
@@ -1861,7 +1861,7 @@ z-index: 1;
      align-items: center;
     justify-content: center;
 }
-.footersociallinks a:hover{
+.popularnewssociallinks a:hover{
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
