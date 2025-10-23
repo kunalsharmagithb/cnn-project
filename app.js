@@ -97,4 +97,25 @@ closeicon.addEventListener('click',()=>{
       },
     });
 
-    // list component 
+  //  supporting pages js starts from here 
+function currentDate(){
+  const today = new Date();
+const formatedDate = today.toLocaleDateString();
+const todaylist = document.querySelectorAll(".herocarddate");
+todaylist.forEach(function(dateElement){
+    dateElement.innerHTML = formatedDate;
+
+});
+}
+currentDate();
+function relatedTopicDate(){
+    const today = new Date();
+const formatedDate = today.toLocaleDateString();
+const relatedtopicdate = document.querySelectorAll(".relatedtopiccarddate");
+relatedtopicdate.forEach(function(dateElement){
+    dateElement.innerHTML = formatedDate;
+});
+}
+relatedTopicDate();
+
+// supporting pages js ends here 
