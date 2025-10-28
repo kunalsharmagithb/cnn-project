@@ -8,12 +8,22 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> 
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://htmldemo.net/khobor/khobor/css/bootstrap.min.css">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="https://htmldemo.net/khobor/khobor/css/font-awesome.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="https://htmldemo.net/khobor/khobor/css/plugins.css">
+    <!-- ycp -->
+    <link rel="stylesheet" href="https://htmldemo.net/khobor/khobor/css/ycp.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="https://htmldemo.net/khobor/khobor/style.css">   
 </head>
 <body> 
     <!-- nav bar starts here  -->
     <div class="mainnav">
-                        <div class="wid-cont">
+                        <div class="wid-cont" id="top">
                             <div class="tradingview-widget-container" style="width: 100%; height: 74px;">
                                     <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22title%22%3A%22S%26P%20500%20Index%22%7D%2C%7B%22proName%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22title%22%3A%22US%20100%20Cash%20CFD%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AEURUSD%22%2C%22title%22%3A%22EUR%20to%20USD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3ABTCUSD%22%2C%22title%22%3A%22Bitcoin%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3AETHUSD%22%2C%22title%22%3A%22Ethereum%22%7D%2C%7B%22proName%22%3A%22OANDA%3AXAUUSD%22%2C%22title%22%3A%22XAUUSD%22%7D%2C%7B%22proName%22%3A%22FX%3AEURUSD%22%2C%22title%22%3A%22EURUSD%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ATSLA%22%2C%22title%22%3A%22TSLA%22%7D%2C%7B%22proName%22%3A%22TVC%3ADXY%22%2C%22title%22%3A%22DXY%22%7D%2C%7B%22proName%22%3A%22BINANCE%3ASOLUSDT%22%2C%22title%22%3A%22SOLUSDT%22%7D%2C%7B%22proName%22%3A%22SP%3ASPX%22%2C%22title%22%3A%22SPX%22%7D%2C%7B%22proName%22%3A%22BINANCE%3AXRPUSDT%22%2C%22title%22%3A%22XRPUSDT%22%7D%5D%2C%22colorTheme%22%3A%22light%22%2C%22largeChartUrl%22%3A%22%22%2C%22isTransparent%22%3Afalse%2C%22showSymbolLogo%22%3Atrue%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A74%2C%22utm_source%22%3A%22%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22ticker-tape%22%2C%22page-uri%22%3A%22__NHTTP__%22%7D" title="ticker tape TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 50px; width: 100%;"></iframe>
                             
@@ -26,8 +36,10 @@
             
                 <nav>
 
-                                    <div class="news-tape-container">
-                                        <ul>
+                                    <div class="ticker-wrapper-h">
+
+                    <ul class="news-ticker-h">
+                        
                                             <li  class="post">
                                                 <a href="#" class="atg"> 
                                                         <img src="https://www.newsest.com/sm-logo.png" style="width:25px; height:25px; margin-right:10px;" alt="">  
@@ -94,8 +106,9 @@
                                                         ज़मीन से जुड़ी सोच और सच्ची खबरें 
                                                     </a>
                                             </li> 
-                                        </ul>
-                                    </div>
+                                       
+                    </ul>
+                    </div>
                         
                         <div class="container">
                             <div class="row">
@@ -135,7 +148,7 @@
                                 <!-- menu bar starts here  -->
                                 <div class="menubar">
                                    <div class="menubar-left">
-                                      <div class="icn-box active" id="menu">
+                                      <div class="icn-box" id="menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
                                          <i class="ri-menu-line"></i>
                                       </div>
                                       <div class="logoimg">
@@ -158,56 +171,56 @@
                         <!-- menu bar ends here  -->
                          
                 </nav>  
-                    <div class="sidebarcontainer ">
-                        <div class="closedicon"><i class="ri-close-line clsdicn"></i></div>
-                    <div class="sidebar">
-                        
-                            <div class="headerimg">
-                                <img src="../assets/images/header-logo.webp" alt="sidebarheaderimage">
-                            </div>
-                                <ul class="sidebarmenu">
-                                        <li>
-                                            <a href="delhincrpage.html">दिल्ली NCR</a>
-                                        </li>
-                                        <li>
-                                            <a href="greaternoida.html">नोएडा-ग्रेनो</a>
-                                        </li>
-                                        <li>
-                                            <a href="ghaziabad.html"> गाज़ियाबाद</a>
-                                        </li>
-                                        <li>
-                                            <a href="uttarpradesh.html">उत्तर प्रदेश</a>
-                                        </li>
-                                        <li>
-                                            <a href="India.html">भारत</a>
-                                        </li>
-                                        <li>
-                                            <a href="foriegn.htmls">विदेश</a>
-                                        </li>
-                                        <li>
-                                            <a href="politics.html">राजनीति</a>
-                                        </li>
-                                        <li>
-                                            <a href="gk.html">सामान्य ज्ञान</a>
-                                        </li>
-                                        <li>
-                                            <a href="sports.html">खेल</a>
-                                        </li>
-                                        <li>
-                                            <a href="entertain.html">मनोरंजन</a>
-                                        </li>
-                                    </ul>
-                                    <div class="sociallinks">
-                                        <a href=""><i class="ri-linkedin-fill"></i></a>
-                                        <a href=""><i class="ri-facebook-fill"></i></a>
-                                        <a href=""><i class="ri-instagram-line"></i></a>
-                                        <a href=""><i class="ri-youtube-fill"></i></a>
-                                        <a href=""><i class="ri-twitter-x-line"></i></a>
-                                        <a href=""><i class="ri-pinterest-fill"></i></a>
-                                        <a href=""><i class="ri-threads-line"></i></a>
-                                    </div>
-                         </div>   
-                </div>                                   
+                                                   <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasWithBothOptions">
+                                <div class="offcanvas-header">
+                                   
+                                    <button type="button" class="btn-close closesidemenubtn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="sidebarmenu">
+                                          <img src="../assets/images/header-logo.webp" alt="" width="150px" height="50px" id="sidebarlogoimg">
+                                            <li class="sidebarmenulistitem">
+                                                <a href="delhincrpage.html">दिल्ली NCR</a>
+                                            </li>
+                                            <li>
+                                                <a href="greaternoida.html">नोएडा-ग्रेनो</a>
+                                            </li>
+                                            <li>
+                                                <a href="ghaziabad.html"> गाज़ियाबाद</a>
+                                            </li>
+                                            <li>
+                                                <a href="uttarpradesh.html">उत्तर प्रदेश</a>
+                                            </li>
+                                            <li>
+                                                <a href="India.html">भारत</a>
+                                            </li>
+                                            <li>
+                                                <a href="foriegn.htmls">विदेश</a>
+                                            </li>
+                                            <li>
+                                                <a href="politics.html">राजनीति</a>
+                                            </li>
+                                            <li>
+                                                <a href="gk.html">सामान्य ज्ञान</a>
+                                            </li>
+                                            <li>
+                                                <a href="sports.html">खेल</a>
+                                            </li>
+                                            <li>
+                                                <a href="entertain.html">मनोरंजन</a>
+                                            </li>
+                                        </ul>
+                                        <div class="sociallinks">
+                                            <a href=""><i class="ri-linkedin-fill"></i></a>
+                                            <a href=""><i class="ri-facebook-fill"></i></a>
+                                            <a href=""><i class="ri-instagram-line"></i></a>
+                                            <a href=""><i class="ri-youtube-fill"></i></a>
+                                            <a href=""><i class="ri-twitter-x-line"></i></a>
+                                            <a href=""><i class="ri-pinterest-fill"></i></a>
+                                            <a href=""><i class="ri-threads-line"></i></a>
+                                        </div>
+                                </div>
+</div>                                
     </div>
           <!-- nav bar ends here   -->
                 <!-- hero section starts here  -->
@@ -215,72 +228,27 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="hero-upper-tape">
-                                            <ul>
-                                                <li  class="post">
-                                                    <a href="#" class="atg1"> 
-                                                            बिहार चुनाव 2025: हेलीकॉप्टर से प्रचार, जानें किराया और बुकिंग प्रक्रिया
-                                                        </a>
-                                                </li> 
-                                                <li  class="post">
-                                                    <a href="" class="atg1"> 
-                                                            ICC रैंकिंग अपडेट: भारतीय खिलाड़ियों को मिला फायदा
-                                                        </a>
-                                                </li> 
-                                                <li  class="post">
-                                                    <a href="" class="atg1">
-                                                        नोएडा में डिफेंडर कार की टक्कर से 5 कार और बाइक क्षतिग्रस्त
-                                                        </a>
-                                                </li> 
-                                                <li  class="post">
-                                                    <a href="" class="atg1"> 
-                                                            गाजियाबाद में बारिश के बाद मौसम में ठंडक
-                                                        </a>
-                                                </li> 
-                                                <li  class="post">
-                                                    <a href="" class="atg1"> 
-                                                            सैफ अली खान ने अपने पर हुए हमले की घटना का किया खुलासा
-                                                        </a>
-                                                </li> 
-                                                <li  class="post">
-                                                    <a href="" class="atg1"> 
-                                                            मायावती ने 9 साल बाद लखनऊ में शक्ति प्रदर्शन किया 
-                                                        </a>
-                                                </li> 
-                                                <li  class="post">
-                                                    <a href="" class="atg1"> 
-                                                            मायावती ने 9 साल बाद लखनऊ में शक्ति प्रदर्शन किया 
-                                                        </a>
-                                                </li> 
-                                                <li  class="post">
-                                                    <a href="" class="atg1"> 
-                                                            पीएम मोदी ने कांग्रेस पर लगाया बड़ा आरोप 
-                                                        </a>
-                                                </li> 
-                                                <li  class="post">
-                                                    <a href="" class="atg1"> 
-                                                            पीएम मोदी और ब्रिटिश पीएम कीर स्टार्मर की मुंबई में मुलाकात
-                                                        </a>
-                                                </li> 
-                                                <li  class="post">
-                                                    <a href="" class="atg1"> 
-                                                            अफगान विदेश मंत्री अमीर खान मुत्तकी का भारत दौरा 
-                                                        </a>
-                                                </li> 
-                                                <li  class="post">
-                                                    <a href="" class="atg1"> 
-                                                            दक्षिण दिल्ली में घरेलू हिंसा: पति पर पत्नी का क्रूर हमला   
-                                                        </a>
-                                                </li> 
-                                            </ul>
-                                            <div class="arrowontape">
-                                                <div class="lefttrending"><span class="flashlighticn"><i class="ri-flashlight-fill"></i></span>TRENDING  </div>
-                                                <div class="rightarrowontapebox">
-                                                    <div class="leftarrowontape"><i class="ri-arrow-left-line"></i></div>
-                                                    <div class="rightarrowontape"><i class="ri-arrow-right-line"></i></div>
-                                                </div>
-                                        </div>
+                                <!-- Breaking News Wrapper Start -->
+                                <div class="breaking-news-wrapper">
+
+                                    <!-- Breaking News Title -->
+                                      <h5 class="breaking-news-title float-start"> <i class="ri-flashlight-fill"></i>TRENDING</h5>
+
+                                    <!-- Breaking Newsticker Start -->
+                                    <ul class="breaking-news-ticker float-start">
+                                        <li><a href="#">Tell me what you today, And i ‘ll tell you who you are!!!</a></li>
+                                        <li><a href="#">Fashion is about some thing that comes from with in you.</a></li>
+                                        <li><a href="#">Australia announced squad for Bangladesh tour.</a></li>
+                                        <li><a href="#">How group of rebel are talking on Banasree epidemic.</a></li>
+                                    </ul><!-- Breaking Newsticker Start -->
+
+                                    <!-- Breaking News Nav -->
+                                    <div class="breaking-news-nav">
+                                        <button class="news-ticker-prev"><i class="fa fa-angle-left"></i></button>
+                                        <button class="news-ticker-next"><i class="fa fa-angle-right"></i></button>
                                     </div>
+                                    
+                                </div><!-- Breaking News Wrapper End -->
                             </div>
                             <div class="col-lg-12 scont">
                                 <div class="slider-container">
@@ -468,7 +436,13 @@
                                 <img src="../assets/images/add2.webp" alt="">
                             </div>
                         </div>
+                        </div>
+                        </div>
                         <!-- webstory section starts from here  -->
+                         <div class="webstoryouterdiv">
+                         <div class="container">
+                         <div class="row">
+                            
                         <div class="col-lg-12 webstory-box">
                             <div class="webstories">
                                 <h2> 🛑 Web Stories</h2>
@@ -476,7 +450,7 @@
                             <div class="webstoryswiper-box">
                                  <div class="swiper webstory-mySwiper">
                                         <div class="swiper-wrapper">
-                                            <div class="swiper-slide webstorysliderimg">
+                                            <div class="swiper-slide webstorysliderimg " data-bs-toggle="modal" data-bs-target="#webstorymodal">
                                                 <div class="linearg "></div>
                                                 <div class="webstorysliderimgbox">
                                                     <img src="../assets/images/swiper img1.webp" alt="">
@@ -485,7 +459,7 @@
                                                     <p>Rifle Regiment of India</p>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide webstorysliderimg">
+                                            <div class="swiper-slide webstorysliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
                                                 <div class="webstorysliderimgbox">
                                                     <div class="linearg "></div>
                                                     <img src="../assets/images/swiper img 2.webp" alt="">
@@ -494,7 +468,7 @@
                                                     <p>Rifle</p>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide webstorysliderimg">
+                                            <div class="swiper-slide webstorysliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
                                                 <div class="webstorysliderimgbox">
                                                     <div class="linearg "></div>
                                                     <img src="../assets/images/swiperimg8.webp" alt="">
@@ -503,7 +477,7 @@
                                                     <p>Rifle</p>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide webstorysliderimg">
+                                            <div class="swiper-slide webstorysliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
                                                 <div class="webstorysliderimgbox">
                                                     <div class="linearg "></div>
                                                     <img src="../assets/images/swiperimg4.webp" alt="">
@@ -512,7 +486,7 @@
                                                     <p>Rifle</p>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide webstorysliderimg">
+                                            <div class="swiper-slide webstorysliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
                                                 <div class="webstorysliderimgbox">
                                                     <div class="linearg "></div>
                                                     <img src="../assets/images/swiperimg6.webp" alt="">
@@ -521,7 +495,7 @@
                                                     <p>Rifle</p>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide webstorysliderimg">
+                                            <div class="swiper-slide webstorysliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
                                                 <div class="webstorysliderimgbox">
                                                     <div class="linearg "></div>
                                                     <img src="../assets/images/swiperimg7.webp" alt="">
@@ -530,7 +504,7 @@
                                                     <p>Rifle</p>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide webstorysliderimg">
+                                            <div class="swiper-slide webstorysliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
                                                 <div class="webstorysliderimgbox">
                                                     <div class="linearg "></div>
                                                     <img src="../assets/images/swiperimg9.webp" alt="">
@@ -539,7 +513,7 @@
                                                     <p>Rifle</p>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide webstorysliderimg">
+                                            <div class="swiper-slide webstorysliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
                                                 <div class="webstorysliderimgbox">
                                                     <div class="linearg "></div>
                                                     <img src="../assets/images/swiperimg4.webp" alt="">
@@ -548,7 +522,7 @@
                                                     <p>Rifle</p>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide webstorysliderimg">
+                                            <div class="swiper-slide webstorysliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
                                                 <div class="webstorysliderimgbox">
                                                     <div class="linearg "></div>
                                                     <img src="../assets/images/swiperimg5.webp" alt="">
@@ -563,8 +537,117 @@
                                             <div class="swiper-pagination"></div>
                                  </div>
                              </div>
+                            </div> 
+                            <div class="webstorymodalcontent">
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="webstorymodal" tabindex="-1" aria-labelledby="webstorymodallabel" aria-hidden="true">
+                                                <div class="modal-body webstorymodalbody">
+                                                     <div class="webstoryclosedbtnbox">
+                                                 <button type="button" class="btn-close wsclosedicn" data-bs-dismiss="modal" aria-label="Close"></button>
+                                               </div>
+                                            <div class="modal-dialog mdlbd ">
+                                                <div class="modal-content">
+                                                    <div class="webstorymodalswiper-box">
+                                                        <div class="swiper webstorymodal-mySwiper">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide webstorymodalsliderimg " data-bs-toggle="modal" data-bs-target="#webstorymodal">
+                                                                        <div class="linearg "></div>
+                                                                        <div class="webstorymodalsliderimgbox">
+                                                                            <img src="../assets/images/swiper img1.webp" alt="">
+                                                                        </div>
+                                                                        <div class="textonwebstorymodalsliderimgbox">
+                                                                            <p>Rifle Regiment of India</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide webstorymodalsliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
+                                                                        <div class="webstorymodalsliderimgbox">
+                                                                            <div class="linearg "></div>
+                                                                            <img src="../assets/images/swiper img 2.webp" alt="">
+                                                                        </div>
+                                                                        <div class="textonwebstorymodalsliderimgbox">
+                                                                            <p>Rifle</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide webstorymodalsliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
+                                                                        <div class="webstorymodalsliderimgbox">
+                                                                            <div class="linearg "></div>
+                                                                            <img src="../assets/images/swiperimg8.webp" alt="">
+                                                                        </div>
+                                                                        <div class="textonwebstorymodalsliderimgbox">
+                                                                            <p>Rifle</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide webstorymodalsliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
+                                                                        <div class="webstorymodalsliderimgbox">
+                                                                            <div class="linearg "></div>
+                                                                            <img src="../assets/images/swiperimg4.webp" alt="">
+                                                                        </div>
+                                                                        <div class="textonwebstorymodalsliderimgbox">
+                                                                            <p>Rifle</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide webstorymodalsliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
+                                                                        <div class="webstorymodalsliderimgbox">
+                                                                            <div class="linearg "></div>
+                                                                            <img src="../assets/images/swiperimg6.webp" alt="">
+                                                                        </div>
+                                                                        <div class="textonwebstorymodalsliderimgbox">
+                                                                            <p>Rifle</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide webstorymodalsliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
+                                                                        <div class="webstorymodalsliderimgbox">
+                                                                            <div class="linearg "></div>
+                                                                            <img src="../assets/images/swiperimg7.webp" alt="">
+                                                                        </div>
+                                                                        <div class="textonwebstorymodalsliderimgbox">
+                                                                            <p>Rifle</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide webstorymodalsliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
+                                                                        <div class="webstorymodalsliderimgbox">
+                                                                            <div class="linearg "></div>
+                                                                            <img src="../assets/images/swiperimg9.webp" alt="">
+                                                                        </div>
+                                                                        <div class="textonwebstorymodalsliderimgbox">
+                                                                            <p>Rifle</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide webstorymodalsliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
+                                                                        <div class="webstorymodalsliderimgbox">
+                                                                            <div class="linearg "></div>
+                                                                            <img src="../assets/images/swiperimg4.webp" alt="">
+                                                                        </div>
+                                                                        <div class="textonwebstorymodalsliderimgbox">
+                                                                            <p>Rifle</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide webstorymodalsliderimg" data-bs-toggle="modal" data-bs-target="#webstorymodal">
+                                                                        <div class="webstorymodalsliderimgbox">
+                                                                            <div class="linearg "></div>
+                                                                            <img src="../assets/images/swiperimg5.webp" alt="">
+                                                                        </div>
+                                                                        <div class="textonwebstorymodalsliderimgbox">
+                                                                            <p>Rifle</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                    <div class="webstorymodalswiper-button-next"><i class="ri-arrow-right-line"></i></div>
+                                                                    <div class="webstorymodalswiper-button-prev"><i class="ri-arrow-left-line"></i></div>
+                                                                    <div class="swiper-pagination"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            
+                                            </div>
+                            </div>  
                             </div>
-                        </div>      
+                            </div>   
+                            </div>
+                            <div class="container">
+                                <div class="row">
                         <div class="col-lg-12 recentnewsmainbox">
 
                                <div class="recentnews-swipercontainer">
@@ -676,6 +759,11 @@
                                 <img src="../assets/images/add2.webp" alt="">
                             </div>
                         </div>
+                        </div>
+                        </div>
+                        <div class="vediocompstoryouterdiv">
+                        <div class="container">
+                        <div class="row">
                         <div class="col-lg-12 vedio-comp">
                             <div class="liveicon">live now</div>
                             <div class="videocompbox">
@@ -785,9 +873,14 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="container">
+                        <div class="row">
                          <div class="col-lg-12 statewisenewslistmainbox">
                             <div class="statewisenewslistbox">
-                                <a href="#" class="statewisenewslisturl">
+                                <a href="./delhincrpage.html" class="statewisenewslisturl">
                                 <div class="titlebox">
                                     <h5 class="title">दिल्ली NCR</h5>
                                     <i class="ri-arrow-down-s-line"></i>
@@ -854,9 +947,9 @@
                             </a>
                             </div>
                             <div class="statewisenewslistbox">
-                                <a href="#" class="statewisenewslisturl">
+                                <a href="./ghaziabad.html" class="statewisenewslisturl">
                                 <div class="titlebox">
-                                    <h5 class="title">गाज़ियाबाद</h5>
+                                    <h5 class="title">गाज़ियाबाद </h5>
                                     <i class="ri-arrow-down-s-line"></i>
                                 </div>
                                     
@@ -989,6 +1082,9 @@
                             </div>
                            
                         </div>
+                        <div class="main-function ">
+                            <div class="container">
+                                
                         <div class="col-lg-12 statewisenewslistmainbox">
                             <div class="statewisenewslistbox">
                                 <a href="#" class="statewisenewslisturl">
@@ -1193,6 +1289,10 @@
                             </div>
                            
                         </div>
+
+
+                            </div>
+                        </div>
                         <div class="col-lg-12 statewisenewslistmainboxlast">
                             <div class="statewisenewslistbox">
                                 <a href="#" class="statewisenewslisturl">
@@ -1335,162 +1435,183 @@
                             <div class="dividerimgbox">
                                 <img src="../assets/images/add2.webp" alt="">
                             </div>
-                    <div class="col-lg-12">
-                        <div class="horoscope-swipercontainer">     
-                                <div class="horoscopetitle">
-                                    अपना आज का राशिफल जानें
-                                </div>
-                                    <div class="swiper horoscope-mySwiper">
-                                        <div class="swiper-wrapper">
-                                        <div class="swiper-slide horoscopesliderimg ">
-                                            <a href="#" class="">
-                                                <div class="horoscopeswiperimgbox">
-                                                    <img src="../assets/svgs/मीन.svg" alt="">
-                                                </div>
-                                                <div class="horoscopeswipertextbox">
-                                                   <div class="horoscopetitle ">
-                                                    मीन
-                                                   </div>
-                                                   <div class="horoscopedate">
-                                                      Aug 13, 2025
-                                                   </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide horoscopesliderimg">
-                                           <a href="#">
-                                                <div class="horoscopeswiperimgbox">
-                                                    <img src="../assets/svgs/कन्या.svg" alt="">
-                                                </div>
-                                                 <div class="horoscopeswipertextbox">
-                                                   <div class="horoscopetitle ">
-                                                    मीन
-                                                   </div>
-                                                   <div class="horoscopedate">
-                                                      Aug 13, 2025
-                                                   </div>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                        <div class="swiper-slide horoscopesliderimg">
-                                             <a href="#">
-                                                <div class="horoscopeswiperimgbox">
-                                                    <img src="../assets/svgs/कुंभ.svg" alt="">
-                                                </div>
-                                                 <div class="horoscopeswipertextbox">
-                                                   <div class="horoscopetitle ">
-                                                    मीन
-                                                   </div>
-                                                   <div class="horoscopedate">
-                                                      Aug 13, 2025
-                                                   </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide horoscopesliderimg">
-                                             <a href="#">
-                                                <div class="horoscopeswiperimgbox">
-                                                    <img src="../assets/svgs/तुला.svg" alt="">
-                                                </div>
-                                                 <div class="horoscopeswipertextbox">
-                                                   <div class="horoscopetitle ">
-                                                    मीन
-                                                   </div>
-                                                   <div class="horoscopedate">
-                                                      Aug 13, 2025
-                                                   </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide horoscopesliderimg">
-                                             <a href="#">
-                                                <div class="horoscopeswiperimgbox">
-                                                    <img src="../assets/svgs/धनु.svg" alt="">
-                                                </div>
-                                                 <div class="horoscopeswipertextbox">
-                                                   <div class="horoscopetitle ">
-                                                    मीन
-                                                   </div>
-                                                   <div class="horoscopedate">
-                                                      Aug 13, 2025
-                                                   </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide horoscopesliderimg">
-                                             <a href="#">
-                                                <div class="horoscopeswiperimgbox">
-                                                    <img src="../assets/svgs/मकर.svg" alt="">
-                                                </div>
-                                                 <div class="horoscopeswipertextbox">
-                                                   <div class="horoscopetitle ">
-                                                    मीन
-                                                   </div>
-                                                   <div class="horoscopedate">
-                                                      Aug 13, 2025
-                                                   </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide horoscopesliderimg">
-                                             <a href="#">
-                                                <div class="horoscopeswiperimgbox">
-                                                    <img src="../assets/svgs/वृश्चिक.svg" alt="">
-                                                </div>
-                                                 <div class="horoscopeswipertextbox">
-                                                   <div class="horoscopetitle ">
-                                                    मीन
-                                                   </div>
-                                                   <div class="horoscopedate">
-                                                      Aug 13, 2025
-                                                   </div>
-                                                </div> 
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide horoscopesliderimg">
-                                             <a href="#">
-                                                <div class="horoscopeswiperimgbox">
-                                                    <img src="../assets/svgs/सिंह.svg" alt="">
-                                                </div>
-                                                 <div class="horoscopeswipertextbox">
-                                                   <div class="horoscopetitle ">
-                                                    मीन
-                                                   </div>
-                                                   <div class="horoscopedate">
-                                                      Aug 13, 2025
-                                                   </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide horoscopesliderimg">
-                                             <a href="#">
-                                                <div class="horoscopeswiperimgbox">
-                                                    <img src="../assets/svgs/कन्या.svg" alt="">
-                                                </div>
-                                                 <div class="horoscopeswipertextbox">
-                                                   <div class="horoscopetitle ">
-                                                    मीन
-                                                   </div>
-                                                   <div class="horoscopedate">
-                                                      Aug 13, 2025
-                                                   </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        </div>
-                                        <div class="horoscopeswiper-button-next"><i class="ri-arrow-right-line"></i></div>
-                                        <div class="horoscopeswiper-button-prev"><i class="ri-arrow-left-line"></i></div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
                             </div>
-                    </div>
-                </div>
-            </div> 
+                <div class="col-lg-12">
+                    <div class="hsmodalbox">
+                            <div class="horoscope-swipercontainer">     
+                                        <div class="horoscopetitle">
+                                            अपना आज का राशिफल जानें
+                                        </div>
+                                            <div class="swiper horoscope-mySwiper">
+                                                <div class="swiper-wrapper">
+                                                <div class="swiper-slide horoscopesliderimg " data-bs-toggle="modal" data-bs-target="#hsmodal">
+                                                        <div class="horoscopeswiperimgbox">
+                                                            <img src="../assets/svgs/मीन.svg" alt="">
+                                                        </div>
+                                                        <div class="horoscopeswipertextbox">
+                                                        <div class="horoscopetitle ">
+                                                            मीन
+                                                        </div>
+                                                        <div class="horoscopedate">
+                                                            Aug 13, 2025
+                                                        </div>
+                                                        </div>
+                                                </div>
+                                                <div class="swiper-slide horoscopesliderimg" data-bs-toggle="modal" data-bs-target="#hsmodal">
+                                                        <div class="horoscopeswiperimgbox">
+                                                            <img src="../assets/svgs/कन्या.svg" alt="">
+                                                        </div>
+                                                        <div class="horoscopeswipertextbox">
+                                                        <div class="horoscopetitle ">
+                                                                कन्या
+                                                        </div>
+                                                        <div class="horoscopedate">
+                                                            Aug 13, 2025
+                                                        </div>
+                                                        </div>
+                                                </div>
+                                                <div class="swiper-slide horoscopesliderimg" data-bs-toggle="modal" data-bs-target="#hsmodal">
+                                                        <div class="horoscopeswiperimgbox">
+                                                            <img src="../assets/svgs/कुंभ.svg" alt="">
+                                                        </div>
+                                                        <div class="horoscopeswipertextbox">
+                                                        <div class="horoscopetitle ">
+                                                            कुंभ
+                                                        </div>
+                                                        <div class="horoscopedate">
+                                                            Aug 13, 2025
+                                                        </div>
+                                                        </div>
+                                                </div>
+                                                <div class="swiper-slide horoscopesliderimg" data-bs-toggle="modal" data-bs-target="#hsmodal">
+                                                        <div class="horoscopeswiperimgbox">
+                                                            <img src="../assets/svgs/तुला.svg" alt="">
+                                                        </div>
+                                                        <div class="horoscopeswipertextbox">
+                                                        <div class="horoscopetitle ">
+                                                            तुला
+                                                        </div>
+                                                        <div class="horoscopedate">
+                                                            Aug 13, 2025
+                                                        </div>
+                                                        </div>
+                                                </div>
+                                                <div class="swiper-slide horoscopesliderimg" data-bs-toggle="modal" data-bs-target="#hsmodal">
+                                                        <div class="horoscopeswiperimgbox">
+                                                            <img src="../assets/svgs/धनु.svg" alt="">
+                                                        </div>
+                                                        <div class="horoscopeswipertextbox">
+                                                        <div class="horoscopetitle ">
+                                                            धनु
+                                                        </div>
+                                                        <div class="horoscopedate">
+                                                            Aug 13, 2025
+                                                        </div>
+                                                        </div>
+                                                </div>
+                                                <div class="swiper-slide horoscopesliderimg" data-bs-toggle="modal" data-bs-target="#hsmodal">
+                                                        <div class="horoscopeswiperimgbox">
+                                                            <img src="../assets/svgs/मकर.svg" alt="">
+                                                        </div>
+                                                        <div class="horoscopeswipertextbox">
+                                                        <div class="horoscopetitle ">
+                                                            मकर
+                                                        </div>
+                                                        <div class="horoscopedate">
+                                                            Aug 13, 2025
+                                                        </div>
+                                                        </div>
+                                                </div>
+                                                <div class="swiper-slide horoscopesliderimg" data-bs-toggle="modal" data-bs-target="#hsmodal">
+                                                        <div class="horoscopeswiperimgbox">
+                                                            <img src="../assets/svgs/वृश्चिक.svg" alt="">
+                                                        </div>
+                                                        <div class="horoscopeswipertextbox">
+                                                        <div class="horoscopetitle ">
+                                                            वृश्चिक
+                                                        </div>
+                                                        <div class="horoscopedate">
+                                                            Aug 13, 2025
+                                                        </div>
+                                                        </div> 
+                                                </div>
+                                                <div class="swiper-slide horoscopesliderimg" data-bs-toggle="modal" data-bs-target="#hsmodal">
+                                                        <div class="horoscopeswiperimgbox">
+                                                            <img src="../assets/svgs/सिंह.svg" alt="">
+                                                        </div>
+                                                        <div class="horoscopeswipertextbox">
+                                                        <div class="horoscopetitle ">
+                                                            सिंह
+                                                        </div>
+                                                        <div class="horoscopedate">
+                                                            Aug 13, 2025
+                                                        </div>
+                                                        </div>
+                                                </div>
+                                                <div class="swiper-slide horoscopesliderimg" data-bs-toggle="modal" data-bs-target="#hsmodal">
+                                                        <div class="horoscopeswiperimgbox">
+                                                            <img src="../assets/svgs/कन्या.svg" alt="">
+                                                        </div>
+                                                        <div class="horoscopeswipertextbox">
+                                                        <div class="horoscopetitle ">
+                                                            कर्क
+                                                        </div>
+                                                        <div class="horoscopedate">
+                                                            Aug 13, 2025
+                                                        </div>
+                                                        </div>
+                                                </div>
+                                                </div>
+                                                <div class="horoscopeswiper-button-next"><i class="ri-arrow-right-line"></i></div>
+                                                <div class="horoscopeswiper-button-prev"><i class="ri-arrow-left-line"></i></div>
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                    </div>
+                                
+                                    
+                        </div>
+                        <div class="bootmodalbox">
+                                        
+
+                                        <!-- 🪟 Modal structure -->
+                                        <div class="modal fade " id="hsmodal" tabindex="-1" aria-labelledby="hsmodalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                            <div class="modal-content">
+
+                                                <!-- Header -->
+                                                <div class="modal-header hsmodalheader">
+                                                <button type="button" class="btn-close closesidemenubtn" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+
+                                                <!-- Body -->
+                                                <div class="modal-body hsmodalbody">
+                                                <div class="modalimgbx">
+                                                    <img src="../assets/svgs/कन्या.svg" alt="">
+                                                </div>
+                                                <div class="modaltitle">
+                                                    कर्क
+                                                </div>
+                                                <div class="modaldate">
+                                                    Aug 13, 2025
+                                                </div>
+                                                <div class="modaldesc">
+                                                    पॉजिटिव - कुछ समस्याएं आएंगी, लेकिन आपको सही मार्गदर्शन मिलने से समस्या हल भी हो जाएगी। विद्यार्थियों को पढ़ाई या अनुसंधान संबंधी कामों में सही परिणाम मिलेंगे। घर में संबंधियों का आना होगा और मेहमान नवाजी में सुखद समय बीतेगा। नेगेटिव - घर के किसी सदस्य के स्वास्थ्य संबंधी दिक्कत आने से कोई महत्वपूर्ण काम रुक भी सकता है। यह समय तालमेल बनाकर रखने का है। साथ ही अपने व्यक्तिगत कामों में भी गोपनीयता बनाए रखें। युवा वर्ग दूसरों से मदद की उम्मीद न रखकर अपनी काम करने की क्षमता पर विश्वास रखें। करियर - मार्केटिंग और आयात-निर्यात संबंधी व्यवसाय फायदेमंद स्थिति में रहेंगे, लेकिन खरीदी-बिक्री संबंधी मामलों में बहुत सावधानी रखने की जरूरत है। कागजी कार्यवाही भी ध्यान से करें। सरकारी नौकरी वाले व्यक्तियों के लिए पदोन्नति के अवसर बन रहे हैं। लव - घर-परिवार में शांतिपूर्ण माहौल बना रहेगा। एक्स्ट्रा मेरिटल अफेयर से दूरी रखना जरूरी है। स्वास्थ्य - महिलाएं खासकर अपने स्वास्थ्य के प्रति जागरूक रहें और वर्तमान मौसम से अपना बचाव रखें। माइग्रेन और सिरदर्द की समस्या से बचने के लिए दिनचर्या व्यवस्थित रखना जरूरी है।
+                                                </div>
+                                                <div class="luckycolor">शुभ रंग: काला</div>
+                                                <div class="luckynum">शुभ संख्या: 1</div>
+                                                </div>
+                                                
+
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+            </div>
             <!-- list component starts from here  -->
                 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 ">
             <div class="colmainoxlist">
                     <div class="listmainbox">
                         <div class="listbox">
@@ -1876,6 +1997,7 @@
   <div class="container">
                 <div class="row">
                     <div class="col-lg-12 ">
+                        <div class="mainboxpopularnews">
                         <div class="popularnews">
                                 <div class="latestblogssection">
                             <div class="latestblogsheading">latest blogs</div>
@@ -2139,312 +2261,326 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
 
                         </div>
                     </div>
                 </div>
             </div> 
-            <!-- footer starts from here  -->
-              <div class="outerdiv">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 footercol">
-                    <div>
-                                    <div class="footer-swipercontainer">    
-                                                    <div class="footertitle">
-                                                        <div class="reddot"></div>
-                                                        Watch now
-                                                    </div>
-                                                        <div class="swiper footer-mySwiper">
-                                                            <div class="swiper-wrapper">
-                                                            <div class="swiper-slide footersliderimg">
-                                                                    <article class="playermainbox">
-                                                                            <div class="playercontainer">
-                                                                                <div class="youtube-vedio">
-                                                                                    <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-                                                                                </div>
-                                                                                <div class="playerinfo">
-                                                                                    <div class="footervediouploaddets">
-                                                                                        Newsest <spanv class="faded">| 1h ago </span>
-                                                                                    </div>
-                                                                                    <div class="footerswiperbookmark">
-                                                                                        <i class="ri-bookmark-line"></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="playertitle">
-                                                                                    आज की ताज़ा तीन खबरें |
-                                                                                </div>
-                                                                            </div>
-                                                                    </article>
-                                                            </div>
-                                                            <div class="swiper-slide footersliderimg">
-                                                            <a href="https://www.youtube.com/watch?v=UYSIRGLyjiA&t=1s">
-                                                                    <article class="playermainbox">
-                                                                            <div class="playercontainer">
-                                                                                <div class="featured-video ">
-                                                                                    <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-                                                                                </div>
-                                                                                <div class="playerinfo">
-                                                                                    <div class="footervediouploaddets">
-                                                                                        Newsest <spanv class="faded">| 1h ago </span>
-                                                                                    </div>
-                                                                                    <div class="footerswiperbookmark">
-                                                                                        <i class="ri-bookmark-line"></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="playertitle">
-                                                                                    क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
-                                                                                </div>
-                                                                            </div>
-                                                                    </article>
-                                                                </a>
-                                                            
-                                                            </div>
-                                                            <div class="swiper-slide footersliderimg">
-                                                                <a href="#">
-                                                                <article class="playermainbox">
-                                                                            <div class="playercontainer">
-                                                                                <div class="featured-video ">
-                                                                                    <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-                                                                                </div>
-                                                                                <div class="playerinfo">
-                                                                                    <div class="footervediouploaddets">
-                                                                                        Newsest <spanv class="faded">| 1h ago </span>
-                                                                                    </div>
-                                                                                    <div class="footerswiperbookmark">
-                                                                                        <i class="ri-bookmark-line"></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="playertitle">
-                                                                                    क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
-                                                                                </div>
-                                                                            </div>
-                                                                    </article>
-                                                                </a>
-                                                            </div>
-                                                            <div class="swiper-slide footersliderimg">
-                                                                <a href="#">
-                                                                    <article class="playermainbox">
-                                                                            <div class="playercontainer">
-                                                                                <div class="featured-video ">
-                                                                                    <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-                                                                                </div>
-                                                                                <div class="playerinfo">
-                                                                                    <div class="footervediouploaddets">
-                                                                                        Newsest <spanv class="faded">| 1h ago </span>
-                                                                                    </div>
-                                                                                    <div class="footerswiperbookmark">
-                                                                                        <i class="ri-bookmark-line"></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="playertitle">
-                                                                                    क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
-                                                                                </div>
-                                                                            </div>
-                                                                    </article>
-                                                                </a>
-                                                            </div>
-                                                            <div class="swiper-slide footersliderimg">
-                                                                <a href="#">
-                                                                <article class="playermainbox">
-                                                                            <div class="playercontainer">
-                                                                                <div class="featured-video ">
-                                                                                    <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-                                                                                </div>
-                                                                                <div class="playerinfo">
-                                                                                    <div class="footervediouploaddets">
-                                                                                        Newsest <spanv class="faded">| 1h ago </span>
-                                                                                    </div>
-                                                                                    <div class="footerswiperbookmark">
-                                                                                        <i class="ri-bookmark-line"></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="playertitle">
-                                                                                    क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
-                                                                                </div>
-                                                                            </div>
-                                                                    </article>
-                                                                </a>
-                                                            </div>
-                                                            <div class="swiper-slide footersliderimg">
-                                                                <a href="#">
-                                                                <article class="playermainbox">
-                                                                            <div class="playercontainer">
-                                                                                <div class="featured-video ">
-                                                                                    <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-                                                                                </div>
-                                                                                <div class="playerinfo">
-                                                                                    <div class="footervediouploaddets">
-                                                                                        Newsest <spanv class="faded">| 1h ago </span>
-                                                                                    </div>
-                                                                                    <div class="footerswiperbookmark">
-                                                                                        <i class="ri-bookmark-line"></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="playertitle">
-                                                                                    क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
-                                                                                </div>
-                                                                            </div>
-                                                                    </article>
-                                                                </a>
-                                                            </div>
-                                                            <div class="swiper-slide footersliderimg">
-                                                                <a href="#">
-                                                                <article class="playermainbox">
-                                                                            <div class="playercontainer">
-                                                                                <div class="featured-video ">
-                                                                                    <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-                                                                                </div>
-                                                                                <div class="playerinfo">
-                                                                                    <div class="footervediouploaddets">
-                                                                                        Newsest <spanv class="faded">| 1h ago </span>
-                                                                                    </div>
-                                                                                    <div class="footerswiperbookmark">
-                                                                                        <i class="ri-bookmark-line"></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="playertitle">
-                                                                                    क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
-                                                                                </div>
-                                                                            </div>
-                                                                    </article>
-                                                                </a>
-                                                            </div>
-                                                            <div class="swiper-slide footersliderimg">
-                                                                <a href="#">
-                                                                <article class="playermainbox">
-                                                                            <div class="playercontainer">
-                                                                                <div class="featured-video ">
-                                                                                    <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-                                                                                </div>
-                                                                                <div class="playerinfo">
-                                                                                    <div class="footervediouploaddets">
-                                                                                        Newsest <spanv class="faded">| 1h ago </span>
-                                                                                    </div>
-                                                                                    <div class="footerswiperbookmark">
-                                                                                        <i class="ri-bookmark-line"></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="playertitle">
-                                                                                    क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
-                                                                                </div>
-                                                                            </div>
-                                                                    </article>
-                                                                </a>
-                                                            </div>
-                                                            <div class="swiper-slide footersliderimg">
-                                                                <a href="#">
-                                                                <article class="playermainbox">
-                                                                            <div class="playercontainer">
-                                                                                <div class="featured-video ">
-                                                                                    <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-                                                                                </div>
-                                                                                <div class="playerinfo">
-                                                                                    <div class="footervediouploaddets">
-                                                                                        Newsest <spanv class="faded">| 1h ago </span>
-                                                                                    </div>
-                                                                                    <div class="footerswiperbookmark">
-                                                                                        <i class="ri-bookmark-line"></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="playertitle">
-                                                                                    क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
-                                                                                </div>
-                                                                            </div>
-                                                                    </article>
-                                                                </a>
-                                                            </div>
-                                                            </div>
-                                                            <div class="footerswiper-button-next"><i class="ri-arrow-right-line"></i></div>
-                                                            <div class="footerswiper-button-prev"><i class="ri-arrow-left-line"></i></div>
-                                                            <div class="swiper-pagination"></div>
-                                                        </div>
-                                                </div>
-
-                                </div>
-                            <div class="footermidpartbox">
-                                <div class="logocontainer">
-                                    <div class="logoimagebox">
-                                        <img src="../assets/images/header-logo.webp" alt="">
-                                    </div>
-                                    <div class="punchline">न्यूज़ेस्ट पर आपको मिलेंगी ताज़ा और सटीक खबरें, बिना शोर-शराबे के। जुड़ें हमारे साथ और हर जरूरी खबर को समझें अपनी</div>
-                                </div>
-                                <div class="linkmainbox">
-                                    <div class="linkmainbox1">
-                                        <div class="linkboxtitle">important link</div>
-                                        <div class="linkbox1 linkbox">
-                                            privacy policy
-                                        </div>
-                                        <div class="linkbox2 linkbox">
-                                            editorial policy
-                                        </div>
-                                        <div class="linkbox3 linkbox">
-                                            ethics policy
-                                        </div>
-                                    </div>
-                                    <div class="linkmainbox2">
-                                        <div class="aboutus linkbox">about us</div>
-                                        <div class="terms linkbox">terms & conditions</div>
-                                    </div>
-                                    <div class="linkmainbox3">
-                                        <div class="disclaimer linkbox">disclaimer</div>
-                                        <div class="contactus linkbox">contact us</div>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="footercotegoriesbox">
-                                    <ul class="footercategories">
-                                                    <li>
-                                                        <a href="#">दिल्ली NCR</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">नोएडा-ग्रेनो</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"> गाज़ियाबाद</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">उत्तर प्रदेश</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">भारत</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">विदेश</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">राजनीति</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">सामान्य ज्ञान</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">खेल</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">मनोरंजन</a>
-                                                    </li>
-                                                </ul>
-                                    
-                                                <div class="footersociallinks">
-                                                        <a href="" class="sociallink"><i class="ri-linkedin-fill"></i></a>
-                                                        <a href="" class="sociallink"><i class="ri-facebook-fill"></i></a>
-                                                        <a href="" class="sociallink"><i class="ri-instagram-line"></i></a>
-                                                        <a href="" class="sociallink"><i class="ri-youtube-fill"></i></a>  
-                                                        <a href="" class="sociallink"><i class="ri-twitter-x-line"></i></a>
-                                                        <a href="" class="sociallink"><i class="ri-pinterest-fill"></i></a>
-                                                        <a href="" class="sociallink"><i class="ri-threads-line"></i></a>
-                                                    </div>
-                                    <div class="copyright">Newsest © 2025 , All rights reserved.</div>
-                            </div>
-                    </div>
-                </div>
             </div>
+            </div>
+            <!-- footer starts from here  -->
+            <div class="footerouterdiv">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 footercol">
+                                <div>
+                                                <div class="footer-swipercontainer">    
+                                                                <div class="footertitle">
+                                                                    <div class="reddot"></div>
+                                                                    Watch now
+                                                                </div>
+                                                                    <div class="swiper footer-mySwiper">
+                                                                        <div class="swiper-wrapper">
+                                                                        <div class="swiper-slide footersliderimg">
+                                                                                <article class="playermainbox">
+                                                                                        <div class="playercontainer">
+                                                                                            <div class="youtube-vedio">
+                                                                                                <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                                                                                            </div>
+                                                                                            <div class="playerinfo">
+                                                                                                <div class="footervediouploaddets">
+                                                                                                    Newsest <spanv class="faded">| 1h ago </span>
+                                                                                                </div>
+                                                                                                <div class="footerswiperbookmark">
+                                                                                                    <i class="ri-bookmark-line"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="playertitle">
+                                                                                                आज की ताज़ा तीन खबरें |
+                                                                                            </div>
+                                                                                        </div>
+                                                                                </article>
+                                                                        </div>
+                                                                        <div class="swiper-slide footersliderimg">
+                                                                        <a href="https://www.youtube.com/watch?v=UYSIRGLyjiA&t=1s">
+                                                                                <article class="playermainbox">
+                                                                                        <div class="playercontainer">
+                                                                                            <div class="featured-video ">
+                                                                                                <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                                                                                            </div>
+                                                                                            <div class="playerinfo">
+                                                                                                <div class="footervediouploaddets">
+                                                                                                    Newsest <spanv class="faded">| 1h ago </span>
+                                                                                                </div>
+                                                                                                <div class="footerswiperbookmark">
+                                                                                                    <i class="ri-bookmark-line"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="playertitle">
+                                                                                                क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
+                                                                                            </div>
+                                                                                        </div>
+                                                                                </article>
+                                                                            </a>
+                                                                        
+                                                                        </div>
+                                                                        <div class="swiper-slide footersliderimg">
+                                                                            <a href="#">
+                                                                            <article class="playermainbox">
+                                                                                        <div class="playercontainer">
+                                                                                            <div class="featured-video ">
+                                                                                                <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                                                                                            </div>
+                                                                                            <div class="playerinfo">
+                                                                                                <div class="footervediouploaddets">
+                                                                                                    Newsest <spanv class="faded">| 1h ago </span>
+                                                                                                </div>
+                                                                                                <div class="footerswiperbookmark">
+                                                                                                    <i class="ri-bookmark-line"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="playertitle">
+                                                                                                क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
+                                                                                            </div>
+                                                                                        </div>
+                                                                                </article>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="swiper-slide footersliderimg">
+                                                                            <a href="#">
+                                                                                <article class="playermainbox">
+                                                                                        <div class="playercontainer">
+                                                                                            <div class="featured-video ">
+                                                                                                <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                                                                                            </div>
+                                                                                            <div class="playerinfo">
+                                                                                                <div class="footervediouploaddets">
+                                                                                                    Newsest <spanv class="faded">| 1h ago </span>
+                                                                                                </div>
+                                                                                                <div class="footerswiperbookmark">
+                                                                                                    <i class="ri-bookmark-line"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="playertitle">
+                                                                                                क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
+                                                                                            </div>
+                                                                                        </div>
+                                                                                </article>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="swiper-slide footersliderimg">
+                                                                            <a href="#">
+                                                                            <article class="playermainbox">
+                                                                                        <div class="playercontainer">
+                                                                                            <div class="featured-video ">
+                                                                                                <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                                                                                            </div>
+                                                                                            <div class="playerinfo">
+                                                                                                <div class="footervediouploaddets">
+                                                                                                    Newsest <spanv class="faded">| 1h ago </span>
+                                                                                                </div>
+                                                                                                <div class="footerswiperbookmark">
+                                                                                                    <i class="ri-bookmark-line"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="playertitle">
+                                                                                                क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
+                                                                                            </div>
+                                                                                        </div>
+                                                                                </article>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="swiper-slide footersliderimg">
+                                                                            <a href="#">
+                                                                            <article class="playermainbox">
+                                                                                        <div class="playercontainer">
+                                                                                            <div class="featured-video ">
+                                                                                                <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                                                                                            </div>
+                                                                                            <div class="playerinfo">
+                                                                                                <div class="footervediouploaddets">
+                                                                                                    Newsest <spanv class="faded">| 1h ago </span>
+                                                                                                </div>
+                                                                                                <div class="footerswiperbookmark">
+                                                                                                    <i class="ri-bookmark-line"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="playertitle">
+                                                                                                क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
+                                                                                            </div>
+                                                                                        </div>
+                                                                                </article>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="swiper-slide footersliderimg">
+                                                                            <a href="#">
+                                                                            <article class="playermainbox">
+                                                                                        <div class="playercontainer">
+                                                                                            <div class="featured-video ">
+                                                                                                <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                                                                                            </div>
+                                                                                            <div class="playerinfo">
+                                                                                                <div class="footervediouploaddets">
+                                                                                                    Newsest <spanv class="faded">| 1h ago </span>
+                                                                                                </div>
+                                                                                                <div class="footerswiperbookmark">
+                                                                                                    <i class="ri-bookmark-line"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="playertitle">
+                                                                                                क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
+                                                                                            </div>
+                                                                                        </div>
+                                                                                </article>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="swiper-slide footersliderimg">
+                                                                            <a href="#">
+                                                                            <article class="playermainbox">
+                                                                                        <div class="playercontainer">
+                                                                                            <div class="featured-video ">
+                                                                                                <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                                                                                            </div>
+                                                                                            <div class="playerinfo">
+                                                                                                <div class="footervediouploaddets">
+                                                                                                    Newsest <spanv class="faded">| 1h ago </span>
+                                                                                                </div>
+                                                                                                <div class="footerswiperbookmark">
+                                                                                                    <i class="ri-bookmark-line"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="playertitle">
+                                                                                                क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
+                                                                                            </div>
+                                                                                        </div>
+                                                                                </article>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="swiper-slide footersliderimg">
+                                                                            <a href="#">
+                                                                            <article class="playermainbox">
+                                                                                        <div class="playercontainer">
+                                                                                            <div class="featured-video ">
+                                                                                                <iframe  src="https://www.youtube.com/embed/UYSIRGLyjiA?si=R2ea_C5fGIa8eku1" title="YouTube video player" class="footeryoutubeplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                                                                                            </div>
+                                                                                            <div class="playerinfo">
+                                                                                                <div class="footervediouploaddets">
+                                                                                                    Newsest <spanv class="faded">| 1h ago </span>
+                                                                                                </div>
+                                                                                                <div class="footerswiperbookmark">
+                                                                                                    <i class="ri-bookmark-line"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="playertitle">
+                                                                                                क्या सच में सरकार ने पेगासस से जासूसी कराई ! सुप्रीम कोर्ट ने क्या कहा? 
+                                                                                            </div>
+                                                                                        </div>
+                                                                                </article>
+                                                                            </a>
+                                                                        </div>
+                                                                        </div>
+                                                                        <div class="footerswiper-button-next"><i class="ri-arrow-right-line"></i></div>
+                                                                        <div class="footerswiper-button-prev"><i class="ri-arrow-left-line"></i></div>
+                                                                        <div class="swiper-pagination"></div>
+                                                                    </div>
+                                                            </div>
+
+                                            </div>
+                                        <div class="footermidpartbox">
+                                            <div class="logocontainer">
+                                                <div class="logoimagebox">
+                                                    <img src="../assets/images/header-logo.webp" alt="">
+                                                </div>
+                                                <div class="punchline">न्यूज़ेस्ट पर आपको मिलेंगी ताज़ा और सटीक खबरें, बिना शोर-शराबे के। जुड़ें हमारे साथ और हर जरूरी खबर को समझें अपनी</div>
+                                            </div>
+                                            <div class="linkmainbox">
+                                                <div class="linkmainbox1">
+                                                    <div class="linkboxtitle">important link</div>
+                                                    <div class="linkbox1 linkbox">
+                                                        privacy policy
+                                                    </div>
+                                                    <div class="linkbox2 linkbox">
+                                                        editorial policy
+                                                    </div>
+                                                    <div class="linkbox3 linkbox">
+                                                        ethics policy
+                                                    </div>
+                                                </div>
+                                                <div class="linkmainbox2">
+                                                    <div class="aboutus linkbox">about us</div>
+                                                    <div class="terms linkbox">terms & conditions</div>
+                                                </div>
+                                                <div class="linkmainbox3">
+                                                    <div class="disclaimer linkbox">disclaimer</div>
+                                                    <div class="contactus linkbox">contact us</div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="footercotegoriesbox">
+                                                <ul class="footercategories">
+                                                                <li>
+                                                                    <a href="#">दिल्ली NCR</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">नोएडा-ग्रेनो</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#"> गाज़ियाबाद</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">उत्तर प्रदेश</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">भारत</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">विदेश</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">राजनीति</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">सामान्य ज्ञान</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">खेल</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">मनोरंजन</a>
+                                                                </li>
+                                                            </ul>
+                                                
+                                                            <div class="footersociallinks">
+                                                                    <a href="" class="sociallink"><i class="ri-linkedin-fill"></i></a>
+                                                                    <a href="" class="sociallink"><i class="ri-facebook-fill"></i></a>
+                                                                    <a href="" class="sociallink"><i class="ri-instagram-line"></i></a>
+                                                                    <a href="" class="sociallink"><i class="ri-youtube-fill"></i></a>  
+                                                                    <a href="" class="sociallink"><i class="ri-twitter-x-line"></i></a>
+                                                                    <a href="" class="sociallink"><i class="ri-pinterest-fill"></i></a>
+                                                                    <a href="" class="sociallink"><i class="ri-threads-line"></i></a>
+                                                                </div>
+                                                <div class="copyright">Newsest © 2025 , All rights reserved.</div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
             </div>
 
             
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- jQuery JS -->
+        <script src="https://htmldemo.net/khobor/khobor/js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="https://htmldemo.net/khobor/khobor/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://htmldemo.net/khobor/khobor/js/bootstrap.bundle.min.js"></script>
+        <!-- Plugins JS -->
+        <script src="https://htmldemo.net/khobor/khobor/js/plugins.js"></script>
+        <!-- ycp JS -->
+        <script src="https://htmldemo.net/khobor/khobor/js/ycp.js"></script>
+        <!-- Main JS -->
+        <script src="https://htmldemo.net/khobor/khobor/js/main.js"></script>
       <script src="./app.js"></script>
 </body>
 </html>

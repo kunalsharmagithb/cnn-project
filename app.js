@@ -1,21 +1,7 @@
 
-const iconBox = document.querySelector('.icn-box');
-const sidebarContainer = document.querySelector('.sidebarcontainer');
-const closeicon = document.querySelector(".closedicon");
-iconBox.addEventListener('click', () => {
-  iconBox.classList.toggle('active'); 
-  if (iconBox.classList.contains('active')) {
-    sidebarContainer.style.display = 'inline';
-  } else {
-    sidebarContainer.style.display = 'none';
-  }
-});
-closeicon.addEventListener('click',()=>{ 
-    sidebarContainer.style.display= 'none';
-})
 
 // essential js for hero js
-    var swiper = new Swiper(".heroslider", {
+    var heroswiper = new Swiper(".heroslider", {
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
@@ -33,7 +19,7 @@ closeicon.addEventListener('click',()=>{
       },
     });
 //webstory js
-  var swiper = new Swiper(".webstory-mySwiper", {
+  var webstoryswiper = new Swiper(".webstory-mySwiper", {
       slidesPerView:5,
       spaceBetween: 3,
       loop:true,
@@ -45,19 +31,68 @@ closeicon.addEventListener('click',()=>{
         nextEl: ".webstoryswiper-button-next",
         prevEl: ".webstoryswiper-button-prev",
       },
+      breakpoints:{
+        1024:{
+            slidesPerView: 5,
+         },
+        768: {  
+           slidesPerView: 3,
+         },
+        480: { 
+          slidesPerView: 2,
+         },
+      }
+    });
+
+  //  webstorymodalswiper js 
+  var webstorymodalswiper = new Swiper(".webstorymodal-mySwiper", {
+      slidesPerView:1,
+      spaceBetween: 31,
+      loop:true,
+      mousewheel:true,
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   type: "fraction",
+      // },
+      navigation: {
+        nextEl: ".webstorymodalswiper-button-next",
+        prevEl: ".webstorymodalswiper-button-prev",
+      },
+      breakpoints:{
+        1024:{
+            slidesPerView: 1,
+         },
+        768: {  
+           slidesPerView: 1,
+         },
+        480: { 
+          slidesPerView: 1,
+         },
+      }
     });
 // recent news swiper js 
-  var swiper = new Swiper(".recentnews-mySwiper", {
+  var recentnewsswiper = new Swiper(".recentnews-mySwiper", {
       slidesPerView:5,
       spaceBetween: 21,
       navigation: {
         nextEl: ".recentnewsswiper-button-next",
         prevEl: ".recentnewsswiper-button-prev",
       },
+      breakpoints:{
+        1024:{
+            slidesPerView: 5,
+         },
+        768: {  
+           slidesPerView: 3,
+         },
+        480: { 
+          slidesPerView: 2,
+         },
+      }
     });
 // vediocomp swiper js 
 
-  var swiper = new Swiper(".vediocomp-mySwiper", {
+  var vediocompswiper = new Swiper(".vediocomp-mySwiper", {
       slidesPerView:4.5,
       spaceBetween: 5,
       direction:"vertical",
@@ -74,7 +109,7 @@ closeicon.addEventListener('click',()=>{
     });
 // footer js 
 
- var swiper = new Swiper(".footer-mySwiper", {
+ var footerswiper = new Swiper(".footer-mySwiper", {
       slidesPerView:3,
       spaceBetween: 21,
       autoplay:{
@@ -85,37 +120,36 @@ closeicon.addEventListener('click',()=>{
         nextEl: ".footerswiper-button-next",
         prevEl: ".footerswiper-button-prev",
       },
+      breakpoints:{
+        1024:{
+            slidesPerView: 3,
+         },
+        768: {  
+           slidesPerView: 3,
+         },
+        480: { 
+          slidesPerView: 2,
+         },
+      }
     });
 
 // horoscope slider js 
-  var swiper = new Swiper(".horoscope-mySwiper", {
+  var horoscopeswiper = new Swiper(".horoscope-mySwiper", {
       slidesPerView:6,
       spaceBetween: 21,
       navigation: {
         nextEl: ".horoscopeswiper-button-next",
         prevEl: ".horoscopeswiper-button-prev",
       },
+      breakpoints:{
+        1024:{
+            slidesPerView: 6,
+         },
+        768: {  
+           slidesPerView: 3,
+         },
+        480: { 
+          slidesPerView: 2,
+         },
+      }
     });
-
-  //  supporting pages js starts from here 
-function currentDate(){
-  const today = new Date();
-const formatedDate = today.toLocaleDateString();
-const todaylist = document.querySelectorAll(".herocarddate");
-todaylist.forEach(function(dateElement){
-    dateElement.innerHTML = formatedDate;
-
-});
-}
-currentDate();
-function relatedTopicDate(){
-    const today = new Date();
-const formatedDate = today.toLocaleDateString();
-const relatedtopicdate = document.querySelectorAll(".relatedtopiccarddate");
-relatedtopicdate.forEach(function(dateElement){
-    dateElement.innerHTML = formatedDate;
-});
-}
-relatedTopicDate();
-
-// supporting pages js ends here 
