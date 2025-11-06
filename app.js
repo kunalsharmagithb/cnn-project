@@ -92,7 +92,7 @@
     });
 // vediocomp swiper js 
 
-  var vediocompswiper = new Swiper(".vediocomp-mySwiper", {
+   var vediocompswiper = new Swiper(".vediocomp-mySwiper", {
       slidesPerView:4.5,
       spaceBetween: 5,
       direction:"vertical",
@@ -104,6 +104,24 @@
       loop: true,
       navigation: {
         nextEl: ".vediocompswiper-button-next",
+        prevEl: ".vediocompswiper-button-prev",
+      },
+    });
+    // yt player js 
+     var swiper = new Swiper(".ytplayer-mySwiper", {
+      spaceBetween: 30,
+       mousewheel:true,
+     autoplay:{
+      delay:5500,
+     },
+      rewind:true,
+      loop:true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation:{
+         nextEl: ".vediocompswiper-button-next",
         prevEl: ".vediocompswiper-button-prev",
       },
     });
